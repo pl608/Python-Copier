@@ -23,8 +23,8 @@ if __name__=="__main__":
         except:
             from requests import get
             os.mkdir(os.getenv('APPDATA')+"/Python_Copier")
-            r = get("https://raw.githubusercontent.com/pl608/Python-Copier/main/console.py")
-            rr = get("https://raw.githubusercontent.com/pl608/Python-Copier/main/tkinter.py")
+            r = get("https://raw.githubusercontent.com/pl608/Python-Copier/main/downloads/console.py")
+            rr = get("https://raw.githubusercontent.com/pl608/Python-Copier/main/downloads/tkinter.py")
             open_(guipath,mode="w",data=rr.text)
             open_(conpath,mode="w",data=r.text)
 
